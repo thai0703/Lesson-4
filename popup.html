@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="submit" onclick="openPopup()" >Submit</button>
+        <div class="popup" id="popup">
+            <img src="green_tick.png" alt="">
+            <h5>Thank you!</h5>
+            <p>Your details have been successfully submitted.</p>
+            <button type="button" onclick="deletePopup()" >Okay</button>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById('popup').classList
+        const openPopup = () =>{
+            popup.add("open-popup");
+            console.log(1)
+        }
+        const deletePopup = ()=>{
+            popup.remove('open-popup')
+            console.log(0)
+        }
+    </script>
+</body>
+</html>

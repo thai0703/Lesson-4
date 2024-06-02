@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #18bdde;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .submit{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+.container .popup{
+    width: 400px;
+    background-color: white;
+    transform: translate(-50%, -50%) scale(0.1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s ;
+}
+.container .open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+}
+.container .popup img{
+    margin-top: -7%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.container .popup h5{
+    font-size: 32px;
+    margin: 0px;
+}
+.container .popup button{
+    width: 100%;
+    background-color: #1dee15;
+    border: 0px;
+    outline: none;
+    padding: 10px 0px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
